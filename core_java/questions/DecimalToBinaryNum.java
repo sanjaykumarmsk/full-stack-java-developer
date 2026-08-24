@@ -1,0 +1,23 @@
+package questions;
+
+public class DecimalToBinaryNum {
+    static int decimalToB(int N) {
+        int B_Number = 0;
+        int cnt = 0;
+        while (N != 0) {
+            int rem = N % 2;
+            double c = Math.pow(10, cnt);
+            B_Number += rem * c;
+            N /= 2;
+            cnt++;
+        }
+        return B_Number;
+    }
+    
+    public static void main(String args[]) {
+        int N = 7;
+        System.out.println("Decimal Num : " + N);
+        System.out.println("Binary Num : " + decimalToB(N));
+ 
+    }
+}
