@@ -1,4 +1,4 @@
-package core_java;
+package typecasting;
 
 class Hello {
     public static void main(String args[]) {
